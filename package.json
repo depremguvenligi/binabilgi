@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "db": "supabase start",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -33,6 +34,11 @@
     "lint-staged": "^13.1.2",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
+    "supabase": "^1.38.6",
     "tailwindcss": "^3.2.7"
+  },
+  "engines": {
+    "npm": "^9.4.0",
+    "node": "^18.14.0"
   }
 }
