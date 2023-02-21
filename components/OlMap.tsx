@@ -1,4 +1,4 @@
-import "../../../../node_modules/ol/ol.css";
+import "../node_modules/ol/ol.css";
 
 import Map from "ol/Map";
 import View from "ol/View";
@@ -12,7 +12,7 @@ type Props = {
   center: [number, number];
 };
 
-const ReMap = ({ children, zoom, center }: Props) => {
+const OlMap = ({ children, zoom, center }: Props) => {
   const { map, setMap, removeMap } = useMap();
   const mapId = useRef<HTMLDivElement>(null);
 
@@ -38,10 +38,10 @@ const ReMap = ({ children, zoom, center }: Props) => {
   }, [center, removeMap, setMap, zoom]);
 
   return (
-    <div ref={mapId} className="w-full h-4/5">
+    <div ref={mapId} className="w-full h-screen">
       {children}
     </div>
   );
 };
 
-export default ReMap;
+export default OlMap;
