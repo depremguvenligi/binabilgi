@@ -1,15 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BinaBilgi
 
 ## Getting Started
 
-First, run the development server:
+First, you should follow the Supabase CLI installation instructions [here](https://supabase.com/docs/reference/cli/introduction).
+
+Then, you can run the following commands to start the development server:
 
 ```bash
-npm run dev
-# or
+supabase start
+```
+
+You can find detailed instructions on how to use the Supabase CLI [here](https://supabase.io/docs/cli/commands).
+
+Create an `.env.local` file in the root of the project and fill the `SUPABASE_KEY` variable with the `service_role` value from your `supabase start` output.
+
+Now, you can run the following commands to start the Next.js development server:
+
+```bash
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: supabase/setup-cli@v1
+
+      - name: Start Supabase local development setup
+        run: supabase start
+
+      - name: Run database linter
+        run: supabase db lint
+
+      - name: Check test file existence
+        id: check_test_files
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "supabase/test/*.test.ts"
+
+      - name: Run tests
+        if: steps.check_test_files.outputs.files_exists == 'true'
+        # Only run tests if there are test files
+        run: supabase test db
+
+      - name: Verify generated types are up-to-date
+        run: |
+          supabase gen types typescript --local > types.ts
+          if [ "$(git diff --ignore-space-at-eol types.ts | wc -l)" -gt "0" ]; then
+            echo "Detected uncommitted changes after build. See status below:"
+            git diff
+            exit 1
+          fi
