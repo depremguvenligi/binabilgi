@@ -1,5 +1,5 @@
 import OLMap from "ol/Map";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 
 type ContextType = {
   map: OLMap | null;
@@ -23,9 +23,11 @@ type Props = {
 const OLMapProvider = ({ children }: Props) => {
   const [map, setMap] = useState<OLMap | null>(null);
 
+  const value = useMemo(() => ({ map, setMap, removeMap: () => {} }), [map]);
+
   return (
     <OLMapContext.Provider
-      value={{ map, setMap, removeMap: () => setMap(null) }}
+      value={value}
     >
       {children}
     </OLMapContext.Provider>
