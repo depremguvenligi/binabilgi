@@ -19,8 +19,19 @@ jobs:
       - name: Start Supabase local development setup
         run: supabase start
 
-      - run: supabase db lint
-      - run: supabase test db
+      - name: Run database linter
+        run: supabase db lint
+
+      - name: Check test file existence
+        id: check_test_files
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "supabase/test/*.test.ts"
+
+      - name: Run tests
+        if: steps.check_test_files.outputs.files_exists == 'true'
+        # Only run tests if there are test files
+        run: supabase test db
 
       - name: Verify generated types are up-to-date
         run: |
