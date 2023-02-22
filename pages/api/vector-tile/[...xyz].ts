@@ -21,7 +21,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const buff = vtpbf.fromGeojsonVt({ geojsonLayer: tile });
 
   res.setHeader("Content-Type", "application/x-protobuf");
-  res.setHeader("Content-Encoding", "gzip");
   res.setHeader("Content-Length", buff.length);
   res.setHeader("Content-Disposition", "attachment; filename=tile.pbf");
   res.setHeader("Access-Control-Allow-Origin", "*");
