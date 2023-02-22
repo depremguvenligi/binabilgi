@@ -1,7 +1,7 @@
 import GeoJSON from "ol/format/GeoJSON.js";
 import Projection from "ol/proj/Projection";
 
-const format = new GeoJSON({
+const GeoJSONVT = new GeoJSON({
   // Data returned from geojson-vt is in tile pixel units
   dataProjection: new Projection({
     code: "TILE_PIXELS",
@@ -10,4 +10,4 @@ const format = new GeoJSON({
   }),
 });
 
-export default format;
+export default GeoJSONVT;
