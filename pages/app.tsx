@@ -1,10 +1,10 @@
 import Head from "next/head";
+import OSM from "ol/source/OSM";
+import TileWMS from "ol/source/TileWMS";
 
 import OlLayers from "@/components/ol/OlLayers";
 import OlMap from "@/components/ol/OlMap";
 import OlTileLayer from "@/components/ol/OlTileLayer";
-import OSMTile from "@/lib/tiles/OSMTile";
-import WMSTile from "@/lib/tiles/WMSTile";
 
 const BinaBilgi = () => {
   return (
@@ -14,15 +14,17 @@ const BinaBilgi = () => {
       </Head>
       <OlMap center={[0, 0]} zoom={12}>
         <OlLayers>
-          <OlTileLayer source={OSMTile()} />
+          <OlTileLayer source={new OSM()} />
           <OlTileLayer
-            source={WMSTile({
-              url: "https://ahocevar.com/geoserver/wms",
-              params: { LAYERS: "topp:states", TILED: true },
-              serverType: "geoserver",
-              // Countries have transparency, so do not fade tiles:
-              transition: 0,
-            })}
+            source={
+              new TileWMS({
+                url: "https://ahocevar.com/geoserver/wms",
+                params: { LAYERS: "topp:states", TILED: true },
+                serverType: "geoserver",
+                // Countries have transparency, so do not fade tiles:
+                transition: 0,
+              })
+            }
           />
         </OlLayers>
       </OlMap>
