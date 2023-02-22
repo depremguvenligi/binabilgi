@@ -35,7 +35,7 @@ const OlMap = ({ children, zoom, center }: Props) => {
       theMap.setTarget(undefined);
       removeMap();
     };
-  }, [center, removeMap, setMap, zoom]);
+  }, [center, zoom]);
 
   return (
     <div ref={mapId} className="w-full h-screen">
