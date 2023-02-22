@@ -1,10 +1,13 @@
 import Head from "next/head";
+import MVT from "ol/format/MVT";
 import OSM from "ol/source/OSM";
 import TileWMS from "ol/source/TileWMS";
+import VectorTileSource from "ol/source/VectorTile";
 
 import OlLayers from "@/components/ol/OlLayers";
 import OlMap from "@/components/ol/OlMap";
 import OlTileLayer from "@/components/ol/OlTileLayer";
+import OlVectorTileLayer from "@/components/ol/OlVectorTileLayer";
 
 const BinaBilgi = () => {
   return (
@@ -34,6 +37,14 @@ const BinaBilgi = () => {
               })
             }
           /> */}
+          <OlVectorTileLayer
+            source={
+              new VectorTileSource({
+                url: "/api/vector-tile/{z}/{y}/{x}.pbf",
+                format: new MVT(),
+              })
+            }
+          />
         </OlLayers>
       </OlMap>
     </div>
