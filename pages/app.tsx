@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import OlLayers from "@/components/OlLayers";
-import OlMap from "@/components/OlMap";
-import OlTileLayer from "@/components/OlTileLayer";
+import OlLayers from "@/components/ol/OlLayers";
+import OlMap from "@/components/ol/OlMap";
+import OlTileLayer from "@/components/ol/OlTileLayer";
 import OSMTile from "@/lib/tiles/OSMTile";
 import WMSTile from "@/lib/tiles/WMSTile";
 
