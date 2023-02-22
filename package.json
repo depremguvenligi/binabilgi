@@ -18,6 +18,7 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "geojson-vt": "^3.2.1",
     "next": "13.1.6",
     "ol": "^7.2.2",
     "react": "18.2.0",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/geojson-vt": "^3.2.0",
     "@types/openlayers": "^4.6.18",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.6.0",
