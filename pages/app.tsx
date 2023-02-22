@@ -12,7 +12,7 @@ const BinaBilgi = () => {
       <Head>
         <title>Bina Bilgi</title>
       </Head>
-      <OlMap center={[0, 0]} zoom={12}>
+      <OlMap center={[0, 0]} zoom={3}>
         <OlLayers>
           <OlTileLayer source={new OSM()} />
           <OlTileLayer
