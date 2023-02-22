@@ -26,6 +26,14 @@ const BinaBilgi = () => {
               })
             }
           />
+          {/* <OlVectorLayer
+            source={
+              new VectorSource({
+                url: "https://openlayers.org/data/vector/ecoregions.json",
+                format: new JSONFeature(),
+              })
+            }
+          /> */}
         </OlLayers>
       </OlMap>
     </div>
