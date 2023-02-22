@@ -3,8 +3,8 @@ import Head from "next/head";
 import OlLayers from "@/components/OlLayers";
 import OlMap from "@/components/OlMap";
 import OlTileLayer from "@/components/OlTileLayer";
-import OSMTile from "@/lib/OSMTile";
-import WMSTile from "@/lib/WMSTile";
+import OSMTile from "@/lib/tiles/OSMTile";
+import WMSTile from "@/lib/tiles/WMSTile";
 
 const BinaBilgi = () => {
   return (
