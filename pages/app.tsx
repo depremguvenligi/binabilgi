@@ -40,7 +40,7 @@ const BinaBilgi = () => {
           <OlVectorTileLayer
             source={
               new VectorTileSource({
-                url: "/api/vector-tile/{z}/{y}/{x}.pbf",
+                url: "/api/vector-tile/{z}/{x}/{y}.pbf",
                 format: new MVT(),
               })
             }
