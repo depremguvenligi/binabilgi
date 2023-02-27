@@ -22,7 +22,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   res.setHeader("Content-Type", "application/x-protobuf");
   res.setHeader("Content-Length", buff.length);
-  res.setHeader("Content-Disposition", `attachment; filename=${zxy[2]}.pbf`);
+  res.setHeader("Content-Disposition", `attachment; filename=${zxy[2]}`);
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.send(buff);
 };
