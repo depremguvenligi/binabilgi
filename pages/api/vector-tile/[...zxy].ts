@@ -4,9 +4,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import vtpbf from "vt-pbf";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { xyz } = req.query;
+  const { zxy } = req.query;
 
-  if (xyz === undefined || typeof xyz === "string")
+  if (zxy === undefined || typeof zxy === "string")
     return res.status(400).json({ error: "Bad Request" });
 
   const { data } = await axios.get(
@@ -14,7 +14,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   );
 
   const tileIndex = geojsonvt(data, {});
-  const tile = tileIndex.getTile(+xyz[0], +xyz[1], +xyz[2].replace(".pbf", ""));
+  const tile = tileIndex.getTile(+zxy[0], +zxy[1], +zxy[2].replace(".pbf", ""));
 
   if (tile === null) return res.status(404).json({ error: "Not Found" });
 
@@ -22,7 +22,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   res.setHeader("Content-Type", "application/x-protobuf");
   res.setHeader("Content-Length", buff.length);
-  res.setHeader("Content-Disposition", "attachment; filename=tile.pbf");
+  res.setHeader("Content-Disposition", `attachment; filename=${zxy[2]}.pbf`);
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.send(buff);
 };
