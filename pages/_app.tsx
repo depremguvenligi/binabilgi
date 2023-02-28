@@ -11,8 +11,8 @@ export default function App({
 }: AppProps) {
   return (
     <SessionProvider session={session}>
-       <OLMapProvider>
-      <Component {...pageProps} />
+      <OLMapProvider>
+        <Component {...pageProps} />
       </OLMapProvider>
     </SessionProvider>
   );
