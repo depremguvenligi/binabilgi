@@ -12,7 +12,7 @@ export const authOptions: NextAuthOptions = {
     url:
       process.env.NODE_ENV === "development"
         ? "http://localhost"
-        : process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        : process.env.SUPABASE_API_URL!,
     secret: process.env.SUPABASE_KEY!,
   }),
   // Configure one or more authentication providers
