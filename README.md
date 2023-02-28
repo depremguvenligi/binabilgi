@@ -7,7 +7,7 @@ First, you should follow the Supabase CLI installation instructions [here](https
 Then, you can run the following commands to start the development server:
 
 ```bash
-supabase start
+npm run sp start
 ```
 
 You can find detailed instructions on how to use the Supabase CLI [here](https://supabase.io/docs/cli/commands).
