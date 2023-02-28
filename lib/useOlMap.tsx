@@ -34,12 +34,12 @@ const OLMapProvider = ({ children }: Props) => {
   );
 };
 
-const useMap = () => {
+const useOlMap = () => {
   const context = useContext(OLMapContext);
   if (context === undefined) {
-    throw new Error("useMap must be used within a MapProvider");
+    throw new Error("useOlMap must be used within a MapProvider");
   }
   return context;
 };
 
-export { OLMapProvider, useMap };
+export { OLMapProvider, useOlMap };

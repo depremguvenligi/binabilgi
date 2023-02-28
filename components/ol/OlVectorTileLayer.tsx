@@ -1,10 +1,10 @@
 import VectorTileLayer, { Options } from "ol/layer/VectorTile";
 import { useEffect } from "react";
 
-import { useMap } from "@/lib/useMap";
+import { useOlMap } from "@/lib/useOlMap";
 
 const OlVectorTileLayer = (options?: Options) => {
-  const { map } = useMap();
+  const { map } = useOlMap();
 
   useEffect(() => {
     if (!map) return;

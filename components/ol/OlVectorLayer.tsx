@@ -3,10 +3,10 @@ import VectorLayer from "ol/layer/Vector";
 import type VectorSource from "ol/source/Vector";
 import { useEffect } from "react";
 
-import { useMap } from "@/lib/useMap";
+import { useOlMap } from "@/lib/useOlMap";
 
 const OlVectorLayer = (options: Options<VectorSource>) => {
-  const { map } = useMap();
+  const { map } = useOlMap();
 
   useEffect(() => {
     if (!map) return;

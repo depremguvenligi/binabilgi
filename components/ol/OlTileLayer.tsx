@@ -3,10 +3,10 @@ import TileLayer from "ol/layer/Tile";
 import type TileSource from "ol/source/Tile";
 import { useEffect } from "react";
 
-import { useMap } from "@/lib/useMap";
+import { useOlMap } from "@/lib/useOlMap";
 
 const OlTileLayer = (options: Options<TileSource>) => {
-  const { map } = useMap();
+  const { map } = useOlMap();
 
   useEffect(() => {
     if (!map) return;

@@ -4,7 +4,7 @@ import Map from "ol/Map";
 import View from "ol/View";
 import React, { useEffect, useRef } from "react";
 
-import { useMap } from "@/lib/useMap";
+import { useOlMap } from "@/lib/useOlMap";
 
 type Props = {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ type Props = {
 };
 
 const OlMap = ({ children, zoom, center }: Props) => {
-  const { map, setMap, removeMap } = useMap();
+  const { map, setMap, removeMap } = useOlMap();
   const mapId = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
