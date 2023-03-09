@@ -7,7 +7,7 @@ First, you should follow the Supabase CLI installation instructions [here](https
 Then, you can run the following commands to start the development server:
 
 ```bash
-supabase start
+npm run sp start
 ```
 
 You can find detailed instructions on how to use the Supabase CLI [here](https://supabase.io/docs/cli/commands).
@@ -17,7 +17,7 @@ Create an `.env.local` file in the root of the project and fill the `SUPABASE_KE
 Now, you can run the following commands to start the Next.js development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
