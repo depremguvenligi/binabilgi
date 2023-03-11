@@ -37,8 +37,10 @@ create table public.buildings (
   energy_class energy_classes,
   constructor_id bigint,
   architect_id bigint,
+  inspector_id bigint,
   constraint constructor_id foreign key (constructor_id) references contractors (id) on delete restrict,
-  constraint architect_id foreign key (architect_id) references contractors (id) on delete restrict
+  constraint architect_id foreign key (architect_id) references contractors (id) on delete restrict,
+  constraint inspector_id foreign key (inspector_id) references contractors (id) on delete restrict
 );
 
 create index buildings_location_idx on public.buildings using gist (location);
