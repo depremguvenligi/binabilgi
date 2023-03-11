@@ -56,10 +56,13 @@ create table public.reports (
   comment text,
   url text,
   building_id bigint not null,
-  constraint building_id foreign key (building_id) references buildings (id) on delete restrict
+  user_id uuid not null,
+  constraint building_id foreign key (building_id) references buildings (id) on delete restrict,
+  constraint user_id foreign key (user_id) references next_auth.users (id) on delete restrict
 );
 
 create index reports_building_id_idx on public.reports using btree (building_id);
+create index reports_user_id_idx on public.reports using btree (user_id);
 
 create trigger handle_updated_at before
 update on public.reports for each row execute procedure moddatetime(updated_at);
