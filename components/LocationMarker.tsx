@@ -2,10 +2,12 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 
-import axios from "axios";
 import { LatLng } from "leaflet";
 import { useEffect, useState } from "react";
 import { Marker, Popup, useMapEvents } from "react-leaflet";
+import useSWR from "swr";
+
+import fetcher from "@/lib/fetcher";
 
 type SoilPrimeAPIResponse = {
   PGA: number;
@@ -16,22 +18,16 @@ type SoilPrimeAPIResponse = {
 
 const LocationMarker = () => {
   const [position, setPosition] = useState<LatLng>();
-  const [pga, setPga] = useState<number>();
+  const { data } = useSWR<SoilPrimeAPIResponse>(
+    position
+      ? `http://api.soilprime.com/seismic_hazard?dyhd_no=2&latitude=${position?.lat}&longitude=${position?.lng}`
+      : null,
+    fetcher
+  );
   const map = useMapEvents({
     locationfound(e) {
       setPosition(e.latlng);
       map.flyTo(e.latlng, map.getZoom());
-      axios
-        .get(
-          `http://api.soilprime.com/seismic_hazard?dyhd_no=2&latitude=${e.latlng.lat}&longitude=${e.latlng.lng}`
-        )
-        .then((res) => {
-          const data = res.data as SoilPrimeAPIResponse;
-          setPga(data.PGA);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
     },
   });
 
@@ -44,8 +40,9 @@ const LocationMarker = () => {
       position={position || { lat: 51.505, lng: -0.09 }}
       attribution='&copy; <a href="https://www.soilprime.com/">SoilPrime</a> PGA'
     >
-      <Popup>PGA: {pga}</Popup>
+      <Popup>PGA: {data?.PGA}</Popup>
     </Marker>
   );
 };
+
 export default LocationMarker;
