@@ -40,7 +40,10 @@ const LocationMarker = () => {
   }, [map]);
 
   return position === null ? null : (
-    <Marker position={position || { lat: 51.505, lng: -0.09 }}>
+    <Marker
+      position={position || { lat: 51.505, lng: -0.09 }}
+      attribution='&copy; <a href="https://www.soilprime.com/">SoilPrime</a> PGA'
+    >
       <Popup>PGA: {pga}</Popup>
     </Marker>
   );
