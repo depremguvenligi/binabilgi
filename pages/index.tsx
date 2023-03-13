@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col justify-between h-screen subpixel-antialiased ">
+      <div className="subpixel-antialiased">
         <div className="grid content-between h-screen grid-cols-1 place-items-center">
           <header></header>
           <main className="mb-auto">
