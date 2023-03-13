@@ -20,7 +20,7 @@ const LocationMarker = () => {
   const [position, setPosition] = useState<LatLng>();
   const { data } = useSWR<SoilPrimeAPIResponse>(
     position
-      ? `http://api.soilprime.com/seismic_hazard?dyhd_no=2&latitude=${position?.lat}&longitude=${position?.lng}`
+      ? `https://api.soilprime.com/seismic_hazard?dyhd_no=2&latitude=${position?.lat}&longitude=${position?.lng}`
       : null,
     fetcher
   );
