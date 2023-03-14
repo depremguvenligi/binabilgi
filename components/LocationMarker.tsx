@@ -51,7 +51,7 @@ const LocationMarker = () => {
   return position === null ? null : (
     <Marker
       draggable={true}
-      position={position || { lat: 51.505, lng: -0.09 }}
+      position={position || { lat: 41.00, lng: 28.98 }}
       attribution='&copy; <a href="https://www.soilprime.com/">SoilPrime</a> PGA'
       eventHandlers={eventHandlers}
       ref={markerRef}
