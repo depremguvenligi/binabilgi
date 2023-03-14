@@ -10,7 +10,7 @@ import MinimapControl from "./MiniMap";
 const Map = () => {
   return (
     <MapContainer
-      center={{ lat: 51.505, lng: -0.09 }}
+      center={{ lat: 41.00, lng: 28.98 }}
       zoom={13}
       className="w-full h-screen"
     >
