@@ -1,46 +1,44 @@
-# BinaBilgi
+![This is an image](https://cdn.discordapp.com/attachments/731164914751635510/1085165480412729424/Ekran_Resmi_2023-03-14_14.39.56.png)
 
-## Getting Started
 
-First, you should follow the Supabase CLI installation instructions [here](https://supabase.com/docs/reference/cli/introduction).
+# About
 
-Then, you can run the following commands to start the development server:
+[binabilgi.com](https://binabilgi.com/) is an open-source, map-based application that enables people to access the information they need about the earthquake safety status of buildings in order to minimize the damages that may occur in possible earthquakes.
 
-```bash
-npm run sp start
-```
+We are developing a spatial database that maps spatial data of different qualities and scales, compiled from different sources on earthquake safety, and presents it to the user in an understandable and traceable manner.
 
-You can find detailed instructions on how to use the Supabase CLI [here](https://supabase.io/docs/cli/commands).
+# Contribution 
 
-Create an `.env.local` file in the root of the project and fill the `SUPABASE_KEY` variable with the `service_role` value from your `supabase start` output.
+[Contribution guidelines for this project](binabilgi/CONTRIBUTING.md)
 
-Now, you can run the following commands to start the Next.js development server:
+Our most urgent need;
+  - legal advice on the complex problems we face in the field of startup and data law.
+- UI-UX
 
-```bash
-npm run dev
-```
+We need the expansion of the team and volunteer support for the progress of all processes, including;
+  - project management
+  - software
+  - data classification
+  - user experience
+  - law
+  - social media
+  - brand-identity
+  - financial resource
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can reach us via our [Discord](https://discord.gg/4vyvkrVdms) server and info@binabilgi.com.
+You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https://www.instagram.com/binabilgi/) and support us.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Who are we?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into destruction" after 2023 Maras earthquake.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Ant Somers - Developer
+- Faruk Yıldırım - Developer
+- Hazal Duygu Ulusoy Erdem - User Experience Specialist
+- Mustafa Akal - Brand and Business Development Officer
+- Numan Burak Fidan - Developer
+- Özgün Rüya Oral - Project Manager
+- Uğur Koçak - Developer
+- Yamaç Kurtuluş - Developer
+- Zeynep Can Eliacik - Campaign Manager
