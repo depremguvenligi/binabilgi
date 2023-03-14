@@ -95,7 +95,7 @@ Ekip 2023 Maraş Depremi’nden sonra, “Türkiye’de depremlerin afete dönü
 - Yamaç Kurtuluş- Geliştirici
 - Zeynep Can Eliaçık- Kampanya Sorumlusu 
 
-[Contribution guidelines for this project]
+[Contribution guidelines for this project] CONTRIBUTING.md)
 
 
 
