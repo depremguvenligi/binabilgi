@@ -2,8 +2,8 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 
-import { LatLng } from "leaflet";
-import { useEffect, useState } from "react";
+import { LatLng, Marker as LeafletMarker } from "leaflet";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Marker, Popup, useMapEvents } from "react-leaflet";
 import useSWR from "swr";
 
@@ -31,14 +31,30 @@ const LocationMarker = () => {
     },
   });
 
+  const markerRef = useRef<LeafletMarker>(null);
+  const eventHandlers = useMemo(
+    () => ({
+      dragend() {
+        const marker = markerRef.current
+        if (marker != null) {
+          setPosition(marker.getLatLng())
+        }
+      },
+    }),
+    [],
+  )
+
   useEffect(() => {
     map.locate();
   }, [map]);
 
   return position === null ? null : (
     <Marker
+      draggable={true}
       position={position || { lat: 51.505, lng: -0.09 }}
       attribution='&copy; <a href="https://www.soilprime.com/">SoilPrime</a> PGA'
+      eventHandlers={eventHandlers}
+      ref={markerRef}
     >
       <Popup>PGA: {data?.PGA}</Popup>
     </Marker>
