@@ -56,7 +56,7 @@ const LocationMarker = () => {
       eventHandlers={eventHandlers}
       ref={markerRef}
     >
-      <Popup>PGA: {data?.PGA}</Popup>
+      <Popup>PGA: {data?.PGA}g</Popup>
     </Marker>
   );
 };
