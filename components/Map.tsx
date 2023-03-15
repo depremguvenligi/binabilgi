@@ -21,7 +21,7 @@ const Map = () => {
       />
       <LayersControl position="bottomright">
         <LayersControl.Overlay name="GEM">
-          <GEMLayer url="/api/vector-tile/{z}/{x}/{y}.pbf" />
+          <GEMLayer url="/api/gem/{z}/{x}/{y}.pbf" />
         </LayersControl.Overlay>
       </LayersControl>
       <LocationMarker />
