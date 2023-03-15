@@ -38,9 +38,11 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/cli-progress": "^3.11.0",
     "@types/geojson-vt": "^3.2.0",
     "@types/leaflet": "^1.9.1",
     "autoprefixer": "^10.4.13",
+    "cli-progress": "^3.12.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
