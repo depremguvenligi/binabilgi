@@ -1,5 +1,5 @@
 
-![This is an image](https://cdn.discordapp.com/attachments/731164914751635510/1085165480412729424/Ekran_Resmi_2023-03-14_14.39.56.png)
+![This is an image](https://cdn.discordapp.com/attachments/731164914751635510/1085534409958101122/Ekran_Resmi_2023-03-15_15.05.56.png)
 # **Binabilgi.com nedir?**
 
 Binabilgi.com kişilerin olası bir depreme karşı yapıların deprem güvenliği durumlarına ilişkin ihtiyaç duyulan bilgiye ulaşmalarını sağlayan açık kaynak kodlu, harita bazlı bir aplikasyondur.  
