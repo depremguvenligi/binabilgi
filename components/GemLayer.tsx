@@ -12,7 +12,7 @@ const GEMLayer = ({ url }: Props) => {
   useEffect(() => {
     const layer = vectorTileLayer(url, {
       style: {
-        weight: 1,
+        weight: 2,
         interactive: true,
       },
     });
