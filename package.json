@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts"
   },
   "dependencies": {
     "@next-auth/supabase-adapter": "^0.2.1",
@@ -23,6 +24,7 @@
     "geojson-vt": "^3.2.1",
     "leaflet": "^1.9.3",
     "leaflet-defaulticon-compatibility": "^0.1.1",
+    "leaflet-vector-tile-layer": "^0.12.0",
     "next": "13.1.6",
     "next-auth": "^4.20.1",
     "react": "18.2.0",
@@ -47,7 +49,8 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "supabase": "^1.38.6",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "ts-node": "^10.9.1"
   },
   "engines": {
     "npm": "^9.4.0",
