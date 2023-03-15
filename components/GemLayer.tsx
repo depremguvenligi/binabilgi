@@ -10,7 +10,12 @@ const GEMLayer = ({ url }: Props) => {
   const context = useLeafletContext();
 
   useEffect(() => {
-    const layer = vectorTileLayer(url);
+    const layer = vectorTileLayer(url, {
+      style: {
+        weight: 1,
+        interactive: true,
+      },
+    });
     const container = context.layerContainer || context.map;
 
     container.addLayer(layer);
