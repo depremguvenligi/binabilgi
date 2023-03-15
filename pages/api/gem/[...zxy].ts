@@ -4,10 +4,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import path from "path";
 import vtpbf from "vt-pbf";
 
-export const config = {
-  runtime: 'edge',
-};
-
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { zxy } = req.query;
 
