@@ -18,9 +18,6 @@ const GEMLayer = ({ url }: Props) => {
     });
     const container = context.layerContainer || context.map;
 
-    layer.attribution =
-      '&copy; <a href="https://github.com/GEMScienceTools/gem-global-active-faults">GEM</a>';
-
     container.addLayer(layer);
 
     return () => {
