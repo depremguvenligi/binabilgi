@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
-import GEMLayer from "./GemLayer";
+import GemLayer from "./GemLayer";
 import LocationMarker from "./LocationMarker";
 import MinimapControl from "./MiniMap";
 
@@ -21,7 +21,7 @@ const Map = () => {
       />
       <LayersControl position="bottomright">
         <LayersControl.Overlay name="GEM">
-          <GEMLayer url="/api/gem/{z}/{x}/{y}.pbf" />
+          <GemLayer url="/api/gem/{z}/{x}/{y}.pbf" />
         </LayersControl.Overlay>
       </LayersControl>
       <LocationMarker />
