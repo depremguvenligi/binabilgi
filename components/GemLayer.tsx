@@ -5,6 +5,7 @@ import {
   LeafletContextInterface,
 } from "@react-leaflet/core";
 import vectorTileLayer from "leaflet-vector-tile-layer";
+import { defaultFeatureLayer } from "leaflet-vector-tile-layer";
 
 var faultColors: { [key: string]: string } = {
   Anticline: "grey",
@@ -38,6 +39,29 @@ const createVectorTileLayer = (
   context: LeafletContextInterface
 ) => {
   const layer = vectorTileLayer(props.url, {
+    featureToLayer: (
+      feature: any,
+      layerName: string,
+      pxPerExtent: any,
+      options: { [key: string]: any }
+    ) => {
+      const layer = defaultFeatureLayer(
+        feature,
+        layerName,
+        pxPerExtent,
+        options
+      );
+      layer.bindPopup(
+        // List all properties of the feature
+        Object.keys(feature.properties)
+          .map((key) => {
+            return `<b>${key}</b>: ${feature.properties[key]}`;
+          })
+          .join("<br />")
+      );
+
+      return layer;
+    },
     style: (feature: any) => {
       return {
         color: faultColors[feature.properties.slip_type] || "green",
