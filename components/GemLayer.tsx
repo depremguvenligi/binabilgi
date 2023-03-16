@@ -65,7 +65,7 @@ const createVectorTileLayer = (
     style: (feature: any) => {
       return {
         color: faultColors[feature.properties.slip_type] || "green",
-        weight: 2,
+        weight: 3,
         opacity: 1,
         interactive: true,
       };
