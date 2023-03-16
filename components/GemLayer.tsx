@@ -1,31 +1,41 @@
-import { useLeafletContext } from "@react-leaflet/core";
+import {
+  createContainerComponent,
+  createElementHook,
+  createPathHook,
+  LeafletContextInterface,
+} from "@react-leaflet/core";
 import vectorTileLayer from "leaflet-vector-tile-layer";
-import { useEffect } from "react";
 
-type Props = {
-  url: string;
+const createVectorTileLayer = (
+  props: { [key: string]: any },
+  context: LeafletContextInterface
+) => {
+  return {
+    instance: vectorTileLayer(props.url, {
+      ...props.options,
+      style: { weight: 2 },
+    }),
+    context,
+  };
 };
 
-const GEMLayer = ({ url }: Props) => {
-  const context = useLeafletContext();
-
-  useEffect(() => {
-    const layer = vectorTileLayer(url, {
-      style: {
-        weight: 2,
-        interactive: true,
-      },
-    });
-    const container = context.layerContainer || context.map;
-
-    container.addLayer(layer);
-
-    return () => {
-      container.removeLayer(layer);
-    };
-  });
-
-  return null;
+const updateVectorTileLayer = (
+  instance: typeof vectorTileLayer,
+  props: { [key: string]: any },
+  prevProps: { [key: string]: any }
+) => {
+  if (props.options !== prevProps.options) {
+    instance.setStyle(props.options);
+  }
 };
+
+const useVectorTileLayerElement = createElementHook(
+  createVectorTileLayer,
+  updateVectorTileLayer
+);
+
+const useVectorTileLayer = createPathHook(useVectorTileLayerElement);
+
+const GEMLayer = createContainerComponent(useVectorTileLayer);
 
 export default GEMLayer;
