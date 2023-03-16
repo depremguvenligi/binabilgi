@@ -13,7 +13,7 @@ const Map = () => {
     <MapContainer
       center={{ lat: 41.0, lng: 28.98 }}
       zoom={13}
-      className="w-full h-screen"
+      className="w-full h-full"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
