@@ -3,16 +3,16 @@
 
 # About project
 
-[binabilgi.com](https://binabilgi.com/) is an open-source, map-based application that enables people to access the information they need about the earthquake safety status of buildings in order to minimize the damages that may occur in possible earthquakes.
+[binabilgi.com](https://binabilgi.com/) is an open-source, map-based application. It enables people to access the information they need about the earthquake safety status of buildings in order to minimize the damages of possible earthquakes.
 
-We are developing a spatial database that maps spatial data of different qualities and scales, compiled from different sources on earthquake safety, and presents it to the user in an understandable and traceable manner.
+We are developing a spatial database that includes data with different qualities and scales, compiled from different sources. We present it to the user in a user friendly way to make it easy to understand.
 
 # Contribution 
 
 [Contribution guidelines for this project](binabilgi/CONTRIBUTING.md)
 
 Our most urgent need;
-  - legal advice on the complex problems we face in the field of startup and data law.
+- Legal advice, especially for the complex problems on the field of startup and data law.
 - UI-UX
 
 We need the expansion of the team and volunteer support for the progress of all processes, including;
@@ -31,7 +31,7 @@ You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https
 
 # About team
 
-We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into destruction" after 2023 Maras earthquake.
+We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into disaster" after 2023 Maras earthquake.
 
 - Ant Somers - Developer - [@thiras](https://github.com/thiras)
 - Faruk Yıldırım - Developer - [@frkyldrm](https://github.com/frkyldrm)
