@@ -31,6 +31,17 @@ const Map = () => {
             <GemLayer url="/api/gem/{z}/{x}/{y}.pbf" />
           </LayerGroup>
         </LayersControl.Overlay>
+        {process.env.NEXT_PUBLIC_SUPABASE_IBB_GEOLOGY_BUCKET && (
+          <LayersControl.Overlay name="Istanbul Municipality Geology">
+            <TileLayer
+              attribution='&copy; <a href="https://www.ibb.gov.tr">İstanbul Büyükşehir Belediyesi</a>'
+              url={
+                process.env.NEXT_PUBLIC_SUPABASE_IBB_GEOLOGY_BUCKET +
+                "/{z}/{x}/{y}.png"
+              }
+            />
+          </LayersControl.Overlay>
+        )}
       </LayersControl>
       <LocationMarker />
     </MapContainer>
