@@ -33,12 +33,12 @@ You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https
 
 We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into destruction" after 2023 Maras earthquake.
 
-- Ant Somers - Developer
-- Faruk Yıldırım - Developer
-- Hazal Duygu Ulusoy Erdem - User Experience Specialist
-- Mustafa Akal - Brand and Business Development Officer
-- Numan Burak Fidan - Developer
-- Özgün Rüya Oral - Project Manager
-- Uğur Koçak - Developer
-- Yamaç Kurtuluş - Developer
-- Zeynep Can Eliacik - Campaign Manager
+- Ant Somers - Developer - [@thiras](https://github.com/thiras)
+- Faruk Yıldırım - Developer - [@frkyldrm](https://github.com/frkyldrm)
+- Hazal Duygu Ulusoy Erdem - User Experience Specialist - [@hzaldyg](https://github.com/hzaldyg)
+- Mustafa Akal - Brand and Business Development Officer - [@mustafa6555757657](https://github.com/mustafa6555757657)
+- Numan Burak Fidan - Developer - [@nubufi](https://github.com/nubufi)
+- Özgün Rüya Oral - Project Manager - [@zgnruya](https://github.com/zgnruya)
+- Uğur Koçak - Developer - [@ugurk](https://github.com/ugurk)
+- Yamaç Kurtuluş - Developer - [@yamac-kurtulus](https://github.com/yamac-kurtulus)
+- Zeynep Can Eliaçık - Campaign Manager - [@zenepc](https://github.com/zenepc)
