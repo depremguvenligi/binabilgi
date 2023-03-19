@@ -13,7 +13,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const file = path.join(
     process.cwd(),
     "public",
-    "gem_active_faults_harmonized.geojson"
+    "gem_active_faults.geojson"
   );
 
   const data = readFileSync(file, "utf8");
