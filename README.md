@@ -1,7 +1,7 @@
 ![This is an image](https://cdn.discordapp.com/attachments/731164914751635510/1085534409958101122/Ekran_Resmi_2023-03-15_15.05.56.png)
 
 
-# About
+# About project
 
 [binabilgi.com](https://binabilgi.com/) is an open-source, map-based application that enables people to access the information they need about the earthquake safety status of buildings in order to minimize the damages that may occur in possible earthquakes.
 
@@ -29,7 +29,7 @@ We need the expansion of the team and volunteer support for the progress of all 
 You can reach us via our [Discord](https://discord.gg/4vyvkrVdms) server and info@binabilgi.com.
 You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https://www.instagram.com/binabilgi/) and support us.
 
-# Who are we?
+# About team
 
 We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into destruction" after 2023 Maras earthquake.
 
