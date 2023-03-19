@@ -24,6 +24,7 @@ const Map = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      {/* <BuildingLayer url="https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json" /> */}
       <MinimapControl position="topright" />
       <LayersControl position="bottomright">
         <LayersControl.Overlay name="GEM">
