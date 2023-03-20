@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts"
+    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts",
+    "postbuild": "wget -P ./public https://raw.githubusercontent.com/GEMScienceTools/gem-global-active-faults/master/geojson/gem_active_faults.geojson"
   },
   "dependencies": {
     "@next-auth/supabase-adapter": "^0.2.1",
