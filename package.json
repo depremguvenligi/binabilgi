@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts"
+    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts",
+    "postbuild": "npx wget-improved https://raw.githubusercontent.com/depremguvenligi/gem-global-active-faults/master/geojson/gem_active_faults.geojson -d ./public"
   },
   "dependencies": {
     "@next-auth/supabase-adapter": "^0.2.1",
@@ -52,7 +53,8 @@
     "prettier": "^2.8.4",
     "supabase": "^1.38.6",
     "tailwindcss": "^3.2.7",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "wget-improved": "^3.3.1"
   },
   "engines": {
     "npm": "^9.4.0",
