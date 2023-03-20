@@ -8,7 +8,7 @@ const downloadGemGaf = () =>
     )
     .then((response) => {
       fs.writeFileSync(
-        "public/gem_active_faults.geojson",
+        "gem_active_faults.geojson",
         JSON.stringify(response.data)
       );
     })
