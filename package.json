@@ -5,7 +5,7 @@
   "scripts": {
     "sb": "supabase",
     "dev": "next dev",
-    "build": "next build && wget -P ./public https://raw.githubusercontent.com/depremguvenligi/gem-global-active-faults/master/geojson/gem_active_faults.geojson",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
