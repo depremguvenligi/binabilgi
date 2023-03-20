@@ -5,7 +5,8 @@
   "scripts": {
     "sb": "supabase",
     "dev": "next dev",
-    "build": "next build && ts-node ./lib/downloadGemGaf.ts",
+    "build": "next build",
+    "postbuild": "ts-node ./lib/downloadGemGaf.ts",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
