@@ -5,9 +5,9 @@ import { supabase } from "../../lib/supabaseClient";
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { data, error } = await supabase.rpc("buildings_in_view", {
     min_lat: req.body.min_lat,
-    min_lng: req.body.min_lng,
+    min_long: req.body.min_lng,
     max_lat: req.body.max_lat,
-    max_lng: req.body.max_lng,
+    max_long: req.body.max_lng,
   });
 
   if (error) {
