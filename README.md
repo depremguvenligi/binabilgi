@@ -1,4 +1,5 @@
-![Bina Bilgi Logo](public/logo.svg)
+![This is an image](https://cdn.discordapp.com/attachments/731164914751635510/1085534409958101122/Ekran_Resmi_2023-03-15_15.05.56.png)
+
 
 # About project
 
@@ -6,25 +7,24 @@
 
 We are developing a spatial database that includes data with different qualities and scales, compiled from different sources. We present it to the user in a user friendly way to make it easy to understand.
 
-# Contribution
+# Contribution 
 
 [Contribution guidelines for this project](binabilgi/CONTRIBUTING.md)
 
 Our most urgent need;
-
 - Legal advice, especially for the complex problems on the field of startup and data law.
 - UI-UX
 
 We need the expansion of the team and volunteer support for the progress of all processes, including;
+  - project management
+  - software
+  - data classification
+  - user experience
+  - law
+  - social media
+  - brand-identity
+  - financial resource
 
-- project management
-- software
-- data classification
-- user experience
-- law
-- social media
-- brand-identity
-- financial resource
 
 You can reach us via our [Discord](https://discord.gg/4vyvkrVdms) server and info@binabilgi.com.
 You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https://www.instagram.com/binabilgi/) and support us.
