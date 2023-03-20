@@ -7,7 +7,7 @@ import {
 import vectorTileLayer from "leaflet-vector-tile-layer";
 import { defaultFeatureLayer } from "leaflet-vector-tile-layer";
 
-var faultColors: { [key: string]: string } = {
+const faultColors: { [key: string]: string } = {
   Anticline: "grey",
   "Blind Thrust": "black",
   Dextral: "blue",

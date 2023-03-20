@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { supabase } from "../../lib/supabaseClient";
+import { supabase } from "@/lib/supabaseClient";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { data, error } = await supabase.rpc("buildings_in_view", {

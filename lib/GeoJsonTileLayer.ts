@@ -20,9 +20,9 @@ class GeoJsonTileLayer extends L.GridLayer {
   }
 
   createTile(coords: any, done: any) {
-    var tile = L.DomUtil.create("div", "leaflet-tile");
+    const tile = L.DomUtil.create("div", "leaflet-tile");
     tile.style["boxShadow"] = "inset 0 0 2px #f00";
-    var url = this!._expandUrl(this.url!, coords);
+    const url = this!._expandUrl(this.url!, coords);
     if (this.cache![coords]) {
       done.call(this);
     } else {
@@ -71,7 +71,7 @@ class GeoJsonTileLayer extends L.GridLayer {
     // @ts-ignore
     this.layer?.clearLayers();
     this.features = {};
-    for (var coords in this.cache) {
+    for (let coords in this.cache) {
       if (this.cache.hasOwnProperty(coords)) {
         this._drawTile(coords);
       }
@@ -79,12 +79,12 @@ class GeoJsonTileLayer extends L.GridLayer {
   }
 
   _drawTile(coords: any) {
-    var geoData = this.cache![coords];
+    let geoData = this.cache![coords];
     if (geoData.type == "FeatureCollection") {
       geoData = geoData.features;
     }
-    for (var i = 0; i < geoData.length; i++) {
-      var id = geoData[i].id;
+    for (let i = 0; i < geoData.length; i++) {
+      const id = geoData[i].id;
       if (!this.features![id]) {
         // @ts-ignore
         this.layer!.addData(geoData[i]);
@@ -102,7 +102,7 @@ class GeoJsonTileLayer extends L.GridLayer {
   }
 
   _ajaxRequest(method: any, url: any, data: any, callback: any) {
-    var request = new XMLHttpRequest();
+    const request = new XMLHttpRequest();
     request.open(method, url, true);
     request.onreadystatechange = function () {
       if (request.readyState === 4 && request.status === 200) {
@@ -119,7 +119,7 @@ class GeoJsonTileLayer extends L.GridLayer {
   }
 
   _onZoomAnim(e: any) {
-    var zoom = e.zoom;
+    const zoom = e.zoom;
     if (
       // @ts-ignore
       (this.options.maxZoom && zoom > this.options.maxZoom) ||

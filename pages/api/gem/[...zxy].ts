@@ -21,7 +21,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const tileIndex = geojsonvt(JSON.parse(data), {});
   const tile = tileIndex.getTile(+zxy[0], +zxy[1], +zxy[2].replace(".pbf", ""));
 
-  if (tile === null) return res.status(404).json({ error: "Not Found" });
+  if (tile === null) return res.status(204).end();
 
   const buff = vtpbf.fromGeojsonVt({ geojsonLayer: tile });
 
