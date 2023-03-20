@@ -6,10 +6,9 @@
     "sb": "supabase",
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "ts-node ./lib/downloadGemGaf.ts",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install",
+    "prepare": "husky install && ts-node ./lib/downloadGemGaf.ts",
     "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts"
   },
   "dependencies": {
