@@ -10,7 +10,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts",
-    "postbuild": "npx wget-improved https://raw.githubusercontent.com/depremguvenligi/gem-global-active-faults/master/geojson/gem_active_faults.geojson -O ./public/gem_active_faults.geojson"
+    "postbuild": "ts-node ./lib/downloadGemGaf.ts"
   },
   "dependencies": {
     "@next-auth/supabase-adapter": "^0.2.1",
