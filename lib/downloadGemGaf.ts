@@ -1,5 +1,6 @@
 import axios from "axios";
 import fs from "fs";
+import path from "path";
 
 const downloadGemGaf = () =>
   axios
@@ -8,7 +9,7 @@ const downloadGemGaf = () =>
     )
     .then((response) => {
       fs.writeFileSync(
-        "public/gem_active_faults.geojson",
+        path.join(process.cwd(), "public", "gem_active_faults.geojson"),
         JSON.stringify(response.data)
       );
     })
