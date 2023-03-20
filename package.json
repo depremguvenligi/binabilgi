@@ -5,12 +5,11 @@
   "scripts": {
     "sb": "supabase",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && ts-node ./lib/downloadGemGaf.ts",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts",
-    "postbuild": "ts-node ./lib/downloadGemGaf.ts"
+    "generate:gemgaf": "ts-node ./lib/generateGemgaf.ts"
   },
   "dependencies": {
     "@next-auth/supabase-adapter": "^0.2.1",
