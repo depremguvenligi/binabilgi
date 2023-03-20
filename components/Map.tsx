@@ -27,7 +27,7 @@ const Map = () => {
       {/* <BuildingLayer url="https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json" /> */}
       <MinimapControl position="topright" />
       <LayersControl position="bottomright">
-        <LayersControl.Overlay name="GEM">
+        <LayersControl.Overlay name="GEM Global Active Faults">
           <LayerGroup attribution='&copy; <a href="https://github.com/GEMScienceTools/gem-global-active-faults">GEM</a>'>
             <GemLayer url="/api/gem/{z}/{x}/{y}.pbf" />
           </LayerGroup>
