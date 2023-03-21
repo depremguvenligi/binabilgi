@@ -112,7 +112,7 @@ export default function Home() {
               )}
               <Link href="/app">
                 <button className="px-6 py-4 font-bold text-secondary hover:text-white bg-primary rounded-xl hover:bg-secondary">
-                  Try BinaBilgi Now
+                  App
                 </button>
               </Link>
             </div>
