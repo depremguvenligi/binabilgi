@@ -86,3 +86,16 @@ select coalesce(
             nullif(current_setting('request.jwt.claims', true), '')::jsonb->>'sub'
         )
     )::uuid $function$;
+-- 
+-- Create permissions
+--
+GRANT USAGE ON SCHEMA next_auth TO service_role;
+GRANT ALL ON SCHEMA next_auth TO postgres;
+GRANT ALL ON TABLE next_auth.accounts TO postgres;
+GRANT ALL ON TABLE next_auth.accounts TO service_role;
+GRANT ALL ON TABLE next_auth.users TO postgres;
+GRANT ALL ON TABLE next_auth.users TO service_role;
+GRANT ALL ON TABLE next_auth.sessions TO postgres;
+GRANT ALL ON TABLE next_auth.sessions TO service_role;
+GRANT ALL ON TABLE next_auth.verification_tokens TO postgres;
+GRANT ALL ON TABLE next_auth.verification_tokens TO service_role;
