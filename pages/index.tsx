@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 export default function Home() {
+  const { data: session } = useSession();
+
   return (
     <>
       <Head>
@@ -86,7 +89,20 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10 space-x-5">
+              {session ? (
+                <Link href="/api/auth/signout">
+                  <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
+                    Logout
+                  </button>
+                </Link>
+              ) : (
+                <Link href="/api/auth/signin">
+                  <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
+                    Login
+                  </button>
+                </Link>
+              )}
               <Link href="/app">
                 <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
                   Try BinaBilgi Now
