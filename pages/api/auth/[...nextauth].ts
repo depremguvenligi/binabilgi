@@ -12,7 +12,7 @@ export const authOptions: NextAuthOptions = {
   adapter: SupabaseAdapter({
     url:
       process.env.NODE_ENV === "development"
-        ? "http://localhost"
+        ? "http://localhost:54321"
         : process.env.SUPABASE_API_URL!,
     secret: process.env.SUPABASE_KEY!,
   }),
