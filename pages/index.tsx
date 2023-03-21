@@ -99,19 +99,19 @@ export default function Home() {
             <div className="flex justify-center mt-10 space-x-5">
               {session ? (
                 <Link href="/api/auth/signout">
-                  <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
+                  <button className="px-6 py-4 font-bold text-white bg-primary rounded-xl hover:bg-secondary">
                     Logout
                   </button>
                 </Link>
               ) : (
                 <Link href="/api/auth/signin">
-                  <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
+                  <button className="px-6 py-4 font-bold text-white bg-primary rounded-xl hover:bg-secondary">
                     Login
                   </button>
                 </Link>
               )}
               <Link href="/app">
-                <button className="px-6 py-4 font-bold text-white bg-teal-500 rounded-xl hover:bg-teal-300">
+                <button className="px-6 py-4 font-bold text-white bg-primary rounded-xl hover:bg-secondary">
                   Try BinaBilgi Now
                 </button>
               </Link>
