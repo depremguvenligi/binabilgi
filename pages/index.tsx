@@ -19,7 +19,6 @@ export default function Home() {
         <title>Bina Bilgi</title>
         <meta name="description" content="Bina Bilgi Sistemi" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`subpixel-antialiased ${raleway.variable} font-sans`}>
         <div className="grid content-between h-screen grid-cols-1 place-items-center">
