@@ -1,7 +1,14 @@
+import { Raleway } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  display: "swap",
+  subsets: ["latin-ext"],
+});
 
 export default function Home() {
   const { data: session } = useSession();
@@ -14,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="subpixel-antialiased">
+      <div className={`subpixel-antialiased ${raleway.variable} font-sans`}>
         <div className="grid content-between h-screen grid-cols-1 place-items-center">
           <header></header>
           <main className="mb-auto">
