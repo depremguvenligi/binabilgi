@@ -37,3 +37,6 @@ next-env.d.ts
 
 # Synk
 .dccache
+
+# GEM GAF
+gem_active_faults.geojson
