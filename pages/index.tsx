@@ -31,7 +31,7 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="w-full mr-10 md:w-1/2 md:20"
+                className="w-full md:w-1/2 md:20"
               />
             </div>
             <div className="flex justify-center space-x-8">
