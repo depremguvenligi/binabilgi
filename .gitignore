@@ -40,3 +40,6 @@ next-env.d.ts
 
 # GEM GAF
 gem_active_faults.geojson
+
+# Sentry
+.sentryclirc
