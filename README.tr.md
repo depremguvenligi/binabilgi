@@ -55,7 +55,7 @@ Deprem güvenliğine ilişkin farklı ölçek ve nitelikte bilgileri tek bir kü
 
 Şu ana dek FAZ 1 olarak nitelediğimiz aşamanın geliştirme aşamasındayız. Farklı kamusal verileri derliyor ve farklı ölçeklerde bu bilgileri en sade ve etkili şekilde nasıl göstereceğimiz üzerine çalışıyoruz.
 
-Marka kimlik ve logo çalışmamız, web sitemiz hazırlanıyor.
+Web sitemiz hazırlanıyor.
 
 Bir yandan da FAZ 2 olarak tanımladığımız bina künyesinin içeriği netleşiyor. Kullanıcıların tespiti ve tasnifi, bilgi almak ve bilgi paylaşmak isteyen kullanıcıların ihtiyaçları ve süreç kurgusu üzerine çalışmalarımız devam ediyor.
 
@@ -76,15 +76,5 @@ info@binabilgi.com üzerinden ulaşabilir,
 # **Biz kimiz?**
 
 Ekip 2023 Maraş Depremi’nden sonra, “Türkiye’de depremlerin afete dönüşmesine engel olmak için ne yapabiliriz?” sorusu etrafında bir araya gelen gönüllü profesyonelleriz.
-
-- Ant Somers - Geliştirici
-- Faruk Yıldırım- Geliştirici
-- Hazal Duygu Ulusoy Erdem- Kullanıcı Deneyimi Sorumlusu
-- Mustafa Akal- Marka ve İş geliştirme Sorumlusu
-- Numan Burak Fidan- Geliştirici
-- Özgün Rüya Oral- Proje Sorumlusu
-- Uğur Koçak- Geliştirici
-- Yamaç Kurtuluş- Geliştirici
-- Zeynep Can Eliaçık- Kampanya Sorumlusu
 
 [Contribution guidelines for this project](binabilgi/CONTRIBUTING.md)
