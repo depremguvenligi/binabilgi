@@ -6,6 +6,24 @@
 
 We are developing a spatial database that includes data with different qualities and scales, compiled from different sources. We present it to the user in a user friendly way to make it easy to understand.
 
+To increase public awareness and participation in earthquake safety measures through the use of an open data platform that provides accessible and comprehensive information on building safety, geological conditions, and seismic risks.
+
+binabilgi includes the following information:
+
+- Risk status of the neighborhood where the structure is located according to the Istanbul Metropolitan Municipality and Kandilli Observatory's Possible Earthquake Loss Estimates Update Report (2020),
+
+- Ground information of the area where the structure is located according to the Istanbul Metropolitan Municipality Geology Project Geological Survey Map (2011),
+
+- Peak Ground Acceleration (PGA) value according to the Disaster and Emergency Management Authority (AFAD) Current Fault Lines data,
+
+- Information entered by citizens such as; 
+    - Istanbul Metropolitan Municipality Building Safety Analysis Results, 
+    - Building inspection report results conducted by companies authorized by the Ministry of Environment, Urbanization and Climate.
+    - License date, contractor company, architectural project company, geotechnical investigation company, inspection company information, information of buildings
+    - Visual materials regarding interventions that are contrary to the project and license,
+    - Information on building standards and certificates (energy, climate, safety etc.)
+
+
 # Contribution
 
 [Contribution guidelines for this project](binabilgi/CONTRIBUTING.md)
@@ -31,14 +49,4 @@ You can follow us on [Twitter](https://twitter.com/binabilgi), [Instagram](https
 
 # About team
 
-We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into disaster" after 2023 Maras earthquake.
-
-- Ant Somers - Developer - [@thiras](https://github.com/thiras)
-- Faruk Yıldırım - Developer - [@frkyldrm](https://github.com/frkyldrm)
-- Hazal Duygu Ulusoy Erdem - User Experience Specialist - [@hzaldyg](https://github.com/hzaldyg)
-- Mustafa Akal - Brand and Business Development Officer - [@mustafa6555757657](https://github.com/mustafa6555757657)
-- Numan Burak Fidan - Developer - [@nubufi](https://github.com/nubufi)
-- Özgün Rüya Oral - Project Manager - [@zgnruya](https://github.com/zgnruya)
-- Uğur Koçak - Developer - [@ugurk](https://github.com/ugurk)
-- Yamaç Kurtuluş - Developer - [@yamac-kurtulus](https://github.com/yamac-kurtulus)
-- Zeynep Can Eliaçık - Campaign Manager - [@zenepc](https://github.com/zenepc)
+We are volunteer professionals who came together around the question "What can be done to prevent earthquakes from turning into disaster" after 2023 Maras earthquake. You can reach us via our Discord channel.
