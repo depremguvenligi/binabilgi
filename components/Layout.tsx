@@ -14,14 +14,12 @@ const raleway = Raleway({
 });
 
 const Layout = ({ children }: Props) => (
-  <div className="subpixel-antialiased">
-    <div className={`subpixel-antialiased ${raleway.variable} font-sans`}>
-      <Nav />
-      <main className="mb-auto">
-        {children}
-      </main>
-      <Footer />
-    </div>
+  <div className={`subpixel-antialiased ${raleway.variable} font-sans`}>
+    <Nav />
+    <main className="mb-auto">
+      {children}
+    </main>
+    <Footer />
   </div>
 );
 
