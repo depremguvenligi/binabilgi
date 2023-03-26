@@ -8,7 +8,7 @@ const Nav = () => (
         <div className="flex lg:w-0 lg:flex-1">
           <Link href="#">
             <span className="sr-only">Logo</span>
-            <Image src="/logo.svg" alt="Bina Bilgi Logo" width={128} height={32} />
+            <Image src="/logo-sideway.svg" alt="Bina Bilgi Logo" width={192} height={48} />
           </Link>
         </div>
 
