@@ -31,12 +31,12 @@ binabilgi includes the following information:
 Our most urgent need;
 
 - Legal advice, especially for the complex problems on the field of startup and data law.
+- Software
 - UI-UX
 
 We need the expansion of the team and volunteer support for the progress of all processes, including;
 
 - project management
-- software
 - data classification
 - user experience
 - law
