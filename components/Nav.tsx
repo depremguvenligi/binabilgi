@@ -11,22 +11,16 @@ const Nav = () => (
             <Image src="/logo-sideway.svg" alt="Bina Bilgi Logo" width={192} height={48} />
           </Link>
         </div>
-
+        
         <nav
           aria-label="Site Nav"
           className="hidden gap-8 text-sm font-medium md:flex"
         >
           <a className="text-gray-500" href="">
-            About
+            hakkımızda
           </a>
           <a className="text-gray-500" href="">
-            Blog
-          </a>
-          <a className="text-gray-500" href="">
-            Projects
-          </a>
-          <a className="text-gray-500" href="">
-            Contact
+            iletişim
           </a>
         </nav>
 
@@ -35,14 +29,14 @@ const Nav = () => (
             className="px-5 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-lg"
             href=""
           >
-            Log in
+            Giriş yap
           </a>
 
           <a
             className="px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg"
             href=""
           >
-            Sign up
+            Üye ol
           </a>
         </div>
 

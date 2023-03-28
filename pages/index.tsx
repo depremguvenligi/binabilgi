@@ -1,8 +1,9 @@
 import Head from "next/head";
 
+import ContentLinkGridAndCTA from "@/components/ContentLinkGridAndCTA";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
-
+import UPSGrid from "@/components/USPGrid";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <ContentLinkGridAndCTA />
+        <UPSGrid />
       </Layout>
     </>
   );

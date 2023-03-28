@@ -32,7 +32,7 @@ const Hero = () => (
               href="#"
               className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-600 hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
-              Learn More
+              App
             </a>
           </div>
         </div>
