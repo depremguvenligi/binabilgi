@@ -48,7 +48,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.0",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.2",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "supabase": "^1.38.6",
